@@ -1,0 +1,91 @@
+/* index.css - Estilos */
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background: url('./descarga.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0e6f6;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid #6a04d1;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(104, 13, 173, 0.6);
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  color: #d4b0ff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #6a0dad;
+  border-radius: 8px;
+  background: #fff;
+  color: #eee;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+}
+
+input:focus, select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #bb86fc;
+  box-shadow: 0 0 8px #bb86fc;
+}
+
+button {
+  background: #6a0dad;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 15px;
+}
+button {
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #bb86fc;
+  color: #111;
+  box-shadow: 0 0 12px #bb86fc;
+}
+
+/* Estilo de los posts */
+.card.item {
+  background: linear-gradient(135deg, #f9f9ec, #cbadff);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 0 3px 0 rgba(106, 13, 173, 0.3);
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.card.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.7);
+}
+.item-head h3 {
+  color: #c639ac;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.item-actions button {
+  margin-left: 8px;
+}
